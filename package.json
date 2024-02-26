@@ -13,7 +13,8 @@
     "start": "node src/index.js",
     "start:dev": "npm run lint && nodemon --exec node src/index.js --unhandled-rejections=warn",
     "test": "jest --detectOpenHandles --coverage",
-    "lint": "eslint src/**/*.js --fix"
+    "lint": "eslint src/**/*.js --fix",
+    "owasp": "owasp-dependency-check --project\"wezvaNode\" -f HTML JSON"
   },
   "repository": {
     "type": "git",
